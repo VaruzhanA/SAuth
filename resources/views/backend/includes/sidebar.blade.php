@@ -18,7 +18,7 @@
                      with font-awesome or any other icon font library -->
                 @role(1)
                 <li class="nav-item">
-                    <a href="{{url('/')}}" class="nav-link">
+                    <a href="{{url('/admin')}}" class="nav-link {{\Route::currentRouteName() == 'admin.dashboard'?'active':''}}">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>Home</p>
                     </a>

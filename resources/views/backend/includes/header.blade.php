@@ -13,7 +13,7 @@
             </a>
             <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
 
-                <a href="{{url('admin/')}}" class="btn btn-default btn-flat m-2">
+                <a href="{{url('admin')}}" class="btn btn-default btn-flat m-2">
                     <i class="fa fa-home"></i>
                     Home
                 </a>
