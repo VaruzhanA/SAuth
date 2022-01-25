@@ -18,18 +18,8 @@
     @yield('before-styles')
     <link rel="stylesheet" href="{{asset('assets/css/cms.compiled.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/forms.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/stylish.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/elegant_icons.css')}}">
-
     <link rel="stylesheet" href="{{asset('assets/css/validation.css')}}" media="screen">
-
     <link rel="stylesheet" href="{{asset('assets/css/login-signup.css')}}">
-
-    <link rel="stylesheet" href="{{asset('assets/css/styles.css')}}">
-
-    <link rel="stylesheet" href="{{asset('assets/css/project.css')}}">
-
-    <link rel="stylesheet" href="{{asset('assets/css/intlTelInput.min.css')}}">
 @yield('after-styles')
 <!-- end CSS -->
 
@@ -91,29 +81,21 @@
 
     <!-- This is the only JS allowed in the head. All other JS files in the footer
     ====================================================================== -->
-    <script src="{{asset('assets/js/modernizr-2.0.6.min.js')}}"></script>
     <!-- Load jQuery from Google or fall back to local copy -->
     <script src="{{asset('assets/js/jquery.min.js')}}"></script>
     <!-- end header JS -->
     <!-- Begin Footer JS section
     ====================================================================== -->
 
-    <script src="{{asset('assets/js/intlTelInput.js')}}"></script>
-    <script src="{{asset('assets/js/smartphone.js')}}"></script>
-
-
     <!-- End JS section -->
 
     <!-- Bootstrap style JS script-->
     <script src="{{asset('assets/js/bootstrap-3.3.5.min.js')}}"></script>
-    <script src="{{asset('assets/js/bootbox.js')}}"></script>
     <script src="{{asset('assets/js/forms.js')}}"></script>
 
     <!-- Scripts concatenated and minified via ant build script-->
     <script src="{{asset('assets/js/jquery.validationEngine2.js')}}"></script>
     <script src="{{asset('assets/js/jquery.validationEngine2-en.js')}}"></script>
-    <script type="text/javascript" async="" src="{{asset('assets/js/recaptcha__en.js')}}" crossorigin="anonymous"
-            integrity="sha384-HTq9bAnQeRQMZWaz4oh4hzQ7uLhEPBDMd6NizGeUQEDJ09mI0WU9lRcdix2okyzP"></script>
     <script src="{{asset('assets/js/scripts.js')}}"></script>
     <!-- end scripts-->
 

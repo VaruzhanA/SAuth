@@ -1,8 +1,47 @@
+/* These styles are shared by multiple themes */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700,700italic);
+/* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+/* Mulish */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap');
+
+:root {
+    --primary: #96C0D0;   --primary-hover: #6ba5bb;   --primary-active: #6ba5bb;
+    --secondary: #f5f5f5; --secondary-hover: #d3d3d3; --secondary-active: #e6e6e6;
+    --success: #517CAB;   --success-hover: #517CAB;   --success-active: #517CAB;
+    --info: #17a2b8;      --info-hover: #2f96b4;      --info-active: #31b0d5;
+    --warning: #ffc107;   --warning-hover: #f89406;   --warning-active: #ec971f;
+    --danger: #f00;       --danger-hover: #f62727;    --danger-active: #f10303;
+    --cc-grey:#999;
+    --cc-light-grey:#eee;
+    --cc-colour-one: #D7DF3B;
+    --cc-colour-two: #A1D7A6;
+    --cc-colour-three: #96C0D0;
+    --cc-colour-four: #517CAB;
+    --cc-colour-five: #37488F;
+    --cc-font-colour: #333;
+}
+
+/* Default colour scheme */
+body {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
 /* Login form */
 html,
 .layout-login {
     height: 100%;
 }
+
+label {
+    font-weight: inherit;
+    margin: 0;
+}
+
 
 .layout-login {
     background-position: top center;
@@ -184,6 +223,49 @@ html,
     max-width: 432px;
     padding-left: 1em;
     padding-right: 1em;
+}
+
+.formError.formError .formErrorContent, .formError.formError .formErrorArrow div {
+    background-color: var(--success);
+}
+
+.btn-success {
+    background-color: var(--success);
+    border-color: var(--success);
+}
+
+.btn-success:active,
+.btn-success.active,
+.btn-success:focus,
+.btn-success.focus,
+.btn-success:active:focus,
+.btn-success:active:hover,
+.open>.dropdown-toggle.btn-success,
+.open>.dropdown-toggle.btn-success:active,
+.open>.dropdown-toggle.btn-success:focus {
+    background-color: var(--success-active);
+    border-color: var(--success-active);
+}
+
+.btn-success:hover, .open>.dropdown-toggle.btn-success:hover {
+    background-color: var(--success-hover);
+    border-color: var(--success-hover);
+    border-color: var(--success-hover);
+}
+
+.btn-primary:active, .btn-primary:active:focus, .btn-primary:active:hover, .btn-primary:focus, .btn-primary.focus, .open>.dropdown-toggle.btn-primary, .open>.dropdown-toggle.btn-primary:active, .open>.dropdown-toggle.btn-primary:focus, #plugin_tools button:active, #plugin_tools button:focus #plugin_tools button:active:focus {
+    background: var(--primary-active);
+    border-color: var(--primary-active);
+}
+
+.btn-primary, #plugin_tools button {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover, .open>.dropdown-toggle.btn-primary:hover, #plugin_tools button:hover {
+    background: var(--primary-hover);
+    border-color: var(--primary-hover);
 }
 
 @media screen and (max-width: 767px) {

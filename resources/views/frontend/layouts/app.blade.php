@@ -14,7 +14,7 @@
     <meta name="google-site-verification" content="">
     <meta name="msvalidate.01" content="">
 
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/frontend//styles.css')}}" media="screen">
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/frontend/styles.css')}}" media="screen">
     <link rel="stylesheet" href="{{asset('assets/css/forms.css')}}">
 </head>
 

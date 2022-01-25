@@ -6,13 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>@yield('title', 'Alcazar Admin')</title>
+        <title>@yield('title', 'SAuth Admin')</title>
         <link rel="stylesheet" href="{{ asset('plugins/fontawesome/css/all.min.css') }}">
-        <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
         @yield('before-styles')
         <link rel="stylesheet" href="{{ asset('plugins/dist/css/sauth.min.css') }}">
         <link rel="stylesheet" href="{{ asset('plugins/dist/css/sa-admin.css') }}">
-        <link rel="stylesheet" href="{{ asset('plugins/build/scss/_dropdown.scss') }}">
         <link rel="stylesheet" href="{{ asset('plugins/datatables-bs4/css/dataTables.bootstrap4.css') }}">
         <link rel="stylesheet" href="{{ asset('plugins/sweetalert2/sweetalert2.css') }}">
 
@@ -56,7 +54,7 @@ echo json_encode([
             @include('backend.includes.footer')
         </div><!-- ./wrapper -->
 
-        <script src="{{ asset('plugins/jquery/jquery.min.js') }}"></script>
+        <script src="{{asset('assets/js/jquery.min.js')}}"></script>
         <script src="{{ asset('plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
         @yield('before-scripts')
         <script src="{{ asset('plugins/datatables/jquery.dataTables.js') }}"></script>
